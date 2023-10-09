@@ -1,0 +1,73 @@
+@import url(https://db.onlinewebfonts.com/c/3724ece79a634e7b5168905d01e59a64?family=Maison+Neue+Book);
+
+*,
+*::before,
+*::after {
+  font-family: "Maison Neue Book", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #0e0e0e;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+:root {
+  --gap: 14.5px;
+  --num-text-gap: 48px;
+
+  --s-font: 14px;
+  --s-m-font: 21px;
+  --m-font: 24px;
+  --l-font: 32px;
+  --v-l-font: 56px;
+  --xxl-font: 58px;
+
+  --normal: 400;
+  --bold: 500;
+
+  --margin-top: 16px;
+  --margin-bot-l: 125px;
+
+  --section-spacing: 48px;
+
+  --line-height-decreased: 97%;
+  --line-height-normal: 100%;
+  --line-height-increased: 110%;
+  --line-height-large: 140%;
+
+  --underline: underline;
+  --uppercase: uppercase;
+  --none: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  margin-bottom: var(--section-spacing);
+}
+
+main {
+  overflow: hidden;
+  text-transform: var(--uppercase);
+  font-size: var(--s-m-font);
+  line-height: var(--line-height-normal);
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.container {
+  padding: 24px 15px;
+}

@@ -1,0 +1,185 @@
+/* Section one */
+
+.one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+.one .imgTwo {
+  aspect-ratio: 1/1.3;
+}
+
+/* Section two */
+
+.h2 {
+  line-height: 110%;
+  font-size: clamp(var(--l-font), 4.5vw, var(--xxl-font));
+  text-transform: initial;
+  user-select: none;
+  font-weight: var(--normal);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: var(--margin-bot-l);
+}
+
+.h2 span:first-child {
+  grid-column: 2;
+  letter-spacing: -2.9px;
+}
+
+.h2 span:last-child {
+  letter-spacing: -2.03px;
+  grid-column: 1 / span 2;
+}
+
+/* Components */
+
+.description {
+  margin-top: var(--margin-top);
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Numbers */
+
+.description span:first-child {
+  font-size: var(--s-font);
+}
+
+/* Section three */
+
+.three {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  margin-bottom: var(--margin-bot-l);
+}
+
+.threeContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-top: 1px solid gray;
+  padding-top: var(--margin-top);
+}
+
+.threeContent div {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30%;
+}
+
+.three img {
+  aspect-ratio: 1/1.2;
+}
+
+/* Typography */
+
+.explore {
+  font-size: var(--s-m-font);
+  font-weight: var(--normal);
+  line-height: var(--line-height-normal);
+}
+
+.title {
+  font-size: var(--s-font);
+  font-weight: var(--bold);
+  line-height: var(--line-height-normal);
+  letter-spacing: 0.28px;
+}
+
+.content {
+  font-size: clamp(var(--s-font), 1.5vw, var(--l-font));
+  font-weight: var(--normal);
+  line-height: var(--line-height-decreased);
+  letter-spacing: -0.64px;
+  margin-bottom: auto;
+  margin-top: var(--margin-top);
+}
+
+.download {
+  font-size: var(--s-font);
+  font-weight: var(--bold);
+  line-height: var(--line-height-normal);
+  letter-spacing: 0.28px;
+  text-decoration: var(--underline);
+}
+
+.download:hover {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Section four */
+
+.four {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+.four img {
+  aspect-ratio: 1/1.3;
+}
+
+/* Section five */
+
+.five {
+  margin-bottom: 0;
+}
+
+/* Section six */
+
+.six {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: var(--margin-bot-l);
+}
+
+.six p {
+  grid-column: 2;
+  font-size: var(--m-font);
+  font-weight: var(--normal);
+  line-height: var(--line-height-large);
+  letter-spacing: -0.72px;
+  text-transform: initial;
+}
+
+/* Section seven */
+
+.seven {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--gap);
+  margin-bottom: var(--margin-bot-l);
+}
+
+.imgEight {
+  aspect-ratio: 1/1.5;
+}
+
+.imgNine {
+  aspect-ratio: 1/1;
+}
+
+.imgTen {
+  aspect-ratio: 1/1.5;
+}
+
+.imgEleven {
+  aspect-ratio: 1/1;
+}
+
+.imgTwelve {
+  aspect-ratio: 1/1;
+}
+
+.imgThirteen {
+  aspect-ratio: 1/1.5;
+}
+
+@media (width < 700px) {
+  /* media queries needed for section 3 studio */
+}
