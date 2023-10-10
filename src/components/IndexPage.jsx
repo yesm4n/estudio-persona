@@ -2,7 +2,7 @@ import styles from "./IndexPage.module.css";
 
 function IndexPage() {
   return (
-    <main>
+    <main className={styles.main}>
       <div className={styles.div}>
         <span className={styles.num}>1</span>
         <span className={styles.name}>Block chair</span>

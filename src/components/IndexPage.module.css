@@ -1,3 +1,7 @@
+.main {
+  margin-top: 86px;
+}
+
 .one {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -34,13 +38,14 @@
 
 .name {
   font-size: clamp(var(--s-font), 1.7vw, var(--m-font));
+  grid-column: 2 / span 2;
 }
 
 .material {
   font-size: var(--s-font);
-  grid-column: 4;
+  grid-column: 4 / span 2;
 }
 
-@media (width < 900px) {
+@media (width < 650px) {
   /* media queries needed for section 3 studio */
 }
