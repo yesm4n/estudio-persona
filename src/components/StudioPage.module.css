@@ -14,24 +14,17 @@
 
 .h2 {
   line-height: 110%;
-  font-size: clamp(var(--l-font), 4.5vw, var(--xxl-font));
+  font-size: clamp(var(--l-font), 4vw, var(--xxl-font));
   text-transform: initial;
   user-select: none;
   font-weight: var(--normal);
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   margin-bottom: var(--margin-bot-l);
-}
-
-.h2 span:first-child {
-  grid-column: 2;
-  letter-spacing: -2.9px;
-}
-
-.h2 span:last-child {
+  text-indent: 50%;
   letter-spacing: -2.03px;
-  grid-column: 1 / span 2;
+}
+
+.spacing {
+  letter-spacing: -2.9px;
 }
 
 /* Components */
@@ -128,6 +121,17 @@
 
 .five {
   margin-bottom: 0;
+}
+
+.h3 {
+  line-height: 100%;
+  font-size: clamp(var(--l-font), 4vw, var(--xxl-font));
+  text-transform: initial;
+  user-select: none;
+  font-weight: var(--normal);
+  margin-bottom: var(--margin-bot-l);
+  text-indent: 50%;
+  letter-spacing: -1.74px;
 }
 
 /* Section six */
