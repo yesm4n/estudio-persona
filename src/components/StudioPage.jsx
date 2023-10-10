@@ -134,14 +134,20 @@ function StudioPage() {
           Estudio Persona was created by Emiliana Gonzalez and Jessie Young in
           2015. Born in Uruguay, they both met in Los Angeles where they started
           working on a collaborative process that evolved into the formation of
-          Estudio Persona. The colorful and vibrant Hispanic cliché is turned on
-          its head in favor of brutalist design evoking stark natural forms and
-          sculptural lines.
+          Estudio Persona. <br /> <br />
+          The colorful and vibrant Hispanic cliché is turned on its head in
+          favor of brutalist design evoking stark natural forms and sculptural
+          lines.
         </p>
       </section>
       {/* Section six */}
 
       {/* Section seven */}
+      <div className={styles.div}>
+        <span className={styles.num}>1</span>
+        <span className={styles.name}>Explore Gallery</span>
+        <span className={styles.material}>Wood, Foam & Fabric</span>
+      </div>
       <section className={styles.seven}>
         <img
           className={styles.imgEight}

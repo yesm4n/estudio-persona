@@ -153,6 +153,27 @@
 
 /* Section seven */
 
+.div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  gap: var(--gap);
+  margin-bottom: var(--margin-top);
+}
+
+.num {
+  font-size: clamp(var(--s-font), 1.7vw, var(--m-font));
+}
+
+.name {
+  font-size: clamp(var(--s-font), 1.7vw, var(--m-font));
+}
+
+.material {
+  font-size: var(--s-font);
+  grid-column: 4;
+}
+
 .seven {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
