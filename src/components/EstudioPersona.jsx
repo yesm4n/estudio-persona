@@ -1,4 +1,5 @@
 import styles from "./EstudioPersona.module.css";
+import { motion } from "framer-motion";
 
 function EstudioPersona() {
   return (
