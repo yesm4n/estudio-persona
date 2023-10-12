@@ -12,15 +12,11 @@ function Navbar() {
         <li>
           <NavLink to="/studio">Studio</NavLink>
         </li>
-        <li>
-          <NavLink to="/shop">Shop</NavLink>
-        </li>
+        <li className="shop">Shop</li>
         <li>
           <NavLink to="/index">Index</NavLink>
         </li>
-        <li>
-          <NavLink to="/journal">Journal</NavLink>
-        </li>
+        <li className="journal">Journal</li>
       </ul>
     </nav>
   );
