@@ -10,9 +10,17 @@
   color: #0e0e0e;
 }
 
+/* 
 html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
+} */
+
+html,
+body {
+  width: 100%;
+  overscroll-behavior: none;
+  min-height: 100%;
 }
 
 :root {
@@ -70,4 +78,24 @@ img {
 
 .container {
   padding: 24px 15px;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }

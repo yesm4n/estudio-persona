@@ -1,4 +1,4 @@
-const gridData = [
+const images = [
   {
     sectionClass: "one",
     items: [
@@ -69,4 +69,4 @@ const gridData = [
   },
 ];
 
-export default gridData;
+export default images;
