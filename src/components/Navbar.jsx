@@ -12,11 +12,11 @@ function Navbar() {
         <li>
           <NavLink to="/studio">Studio</NavLink>
         </li>
-        <li style={{ cursor: "not-allowed" }}>Shop</li>
+        <li className={styles.disabled}>Shop</li>
         <li>
           <NavLink to="/index">Index</NavLink>
         </li>
-        <li style={{ cursor: "not-allowed" }}>Journal</li>
+        <li className={styles.disabled}>Journal</li>
       </ul>
     </nav>
   );

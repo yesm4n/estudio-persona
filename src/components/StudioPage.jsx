@@ -1,4 +1,32 @@
 import styles from "./StudioPage.module.css";
+import { motion } from "framer-motion";
+
+const animateText = {
+  hidden: { opacity: 0, x: 300 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      duration: 2,
+    },
+  },
+};
+
+const animateImages = {
+  hidden: { opacity: 0, y: 200, scale: 0.9 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 1.2,
+    },
+  },
+};
+
+// TODO Lazy loading and first image animation
 
 function StudioPage() {
   return (
@@ -31,7 +59,12 @@ function StudioPage() {
       {/* Section one */}
 
       {/* Section two */}
-      <section className={styles.two}>
+      <motion.section
+        variants={animateText}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <h1 className={styles.h2}>
           <span className={styles.spacing}>
             {" "}
@@ -41,11 +74,17 @@ function StudioPage() {
           met in Los Angeles where they started working on a collaborative
           process that evolved into the formation of Estudio Persona.
         </h1>
-      </section>
+      </motion.section>
       {/* Section two */}
 
       {/* Section three */}
-      <section className={styles.three}>
+      <motion.section
+        className={styles.three}
+        variants={animateImages}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <span className={styles.explore}>Explore Collections</span>
         <div className={styles.threeContent}>
           <div>
@@ -98,11 +137,17 @@ function StudioPage() {
             draggable="false"
           />
         </div>
-      </section>
+      </motion.section>
       {/* Section three */}
 
       {/* Section four */}
-      <section className={styles.four}>
+      <motion.section
+        className={styles.four}
+        variants={animateImages}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <img
           src="images/studio/6.png"
           alt="chair"
@@ -115,21 +160,33 @@ function StudioPage() {
           loading="lazy"
           draggable="false"
         />
-      </section>
+      </motion.section>
       {/* Section four */}
 
       {/* Section five */}
-      <section className={styles.five}>
+      <motion.section
+        className={styles.five}
+        variants={animateText}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <h3 className={styles.h3}>
           At the core of their practice lies a desire to unearth the full
           potential of raw materials and a creative expression reflective of
           their cultural identity and heritage.
         </h3>
-      </section>
+      </motion.section>
       {/* Section five */}
 
       {/* Section six */}
-      <section className={styles.six}>
+      <motion.section
+        className={styles.six}
+        variants={animateImages}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <p>
           Estudio Persona was created by Emiliana Gonzalez and Jessie Young in
           2015. Born in Uruguay, they both met in Los Angeles where they started
@@ -139,7 +196,7 @@ function StudioPage() {
           favor of brutalist design evoking stark natural forms and sculptural
           lines.
         </p>
-      </section>
+      </motion.section>
       {/* Section six */}
 
       {/* Section seven */}
@@ -148,50 +205,56 @@ function StudioPage() {
         <span className={styles.name}>Explore Gallery</span>
         <span className={styles.material}>Wood, Foam & Fabric</span>
       </div>
-      <section className={styles.seven}>
+      <motion.section
+        className={styles.seven}
+        variants={animateImages}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <img
-          className={styles.imgEight}
+          className={styles.tall}
           src="images/studio/8.png"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
         <img
-          className={styles.imgNine}
+          className={styles.normal}
           src="images/studio/9.png"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
         <img
-          className={styles.imgTen}
+          className={styles.tall}
           src="images/studio/10.png"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
         <img
-          className={styles.imgEleven}
+          className={styles.normal}
           src="images/studio/11.png"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
         <img
-          className={styles.imgTwelve}
+          className={styles.normal}
           src="images/studio/12.png"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
         <img
-          className={styles.imgThirteen}
+          className={styles.tall}
           src="images/studio/13.png"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
-      </section>
+      </motion.section>
       {/* Section seven */}
     </main>
   );

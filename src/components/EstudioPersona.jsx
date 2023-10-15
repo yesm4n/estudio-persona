@@ -1,5 +1,19 @@
 import styles from "./EstudioPersona.module.css";
-import images from "./Data";
+import images from "./EstudioData";
+import { motion } from "framer-motion";
+
+// TODO
+const animateImages = {
+  hidden: { opacity: 0, y: 200, scale: 0.9 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 1.2,
+    },
+  },
+};
 
 function EstudioPersona() {
   return (
@@ -7,7 +21,13 @@ function EstudioPersona() {
       {images.map((img, i) => (
         <section className={styles[img.sectionClass]} key={i}>
           {img.items.map((img) => (
-            <div key={img.id}>
+            <motion.div
+              key={img.id}
+              variants={animateImages}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
               <img
                 className={styles[img.class]}
                 src={img.image}
@@ -19,7 +39,7 @@ function EstudioPersona() {
                 <span>{img.id}</span>
                 <span>{img.name}</span>
               </div>
-            </div>
+            </motion.div>
           ))}
         </section>
       ))}

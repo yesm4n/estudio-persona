@@ -18,3 +18,8 @@
   text-decoration: none;
   color: black;
 }
+
+.disabled:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}

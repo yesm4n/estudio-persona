@@ -178,31 +178,14 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: var(--gap);
-  margin-bottom: var(--margin-bot-l);
 }
 
-.imgEight {
+.tall {
   aspect-ratio: 1/1.5;
 }
 
-.imgNine {
+.normal {
   aspect-ratio: 1/1;
-}
-
-.imgTen {
-  aspect-ratio: 1/1.5;
-}
-
-.imgEleven {
-  aspect-ratio: 1/1;
-}
-
-.imgTwelve {
-  aspect-ratio: 1/1;
-}
-
-.imgThirteen {
-  aspect-ratio: 1/1.5;
 }
 
 @media (width < 700px) {
