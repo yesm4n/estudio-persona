@@ -12,7 +12,7 @@ const animateImages = {
     scale: 1,
     transition: {
       type: "spring",
-      stiffness: "2",
+      stiffness: "222",
       duration: 2,
     },
   },

@@ -8,14 +8,14 @@ const animateText = {
     x: 0,
     transition: {
       type: "spring",
-      stiffness: 20,
+      stiffness: 10,
       duration: 2,
     },
   },
 };
 
 const animateImages = {
-  hidden: { opacity: 0, y: 200, scale: 0.9 },
+  hidden: { opacity: 0, y: 100, scale: 1.1 },
   show: {
     opacity: 1,
     y: 0,
