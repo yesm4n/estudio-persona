@@ -1,4 +1,4 @@
-Chair Display Project
+# Chair Display Project
 
 A chair display project, designed by Rron Berisa and coded by me, using Vite as a Single Page Application (SPA).
 
