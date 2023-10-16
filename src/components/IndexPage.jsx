@@ -4,7 +4,6 @@ import indexDataImages from "./IndexData";
 import { motion } from "framer-motion";
 import { Fragment } from "react";
 
-// TODO
 const animateImages = {
   hidden: { opacity: 0, x: "100%" },
   show: {

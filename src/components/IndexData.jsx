@@ -8,27 +8,27 @@ const indexDataImages = [
     },
     items: [
       {
-        image: "images/index/1.png",
+        image: "images/index/1.webp",
         class: "tall",
       },
       {
-        image: "images/index/2.png",
+        image: "images/index/2.webp",
         class: "normal",
       },
       {
-        image: "images/index/3.png",
+        image: "images/index/3.webp",
         class: "tall",
       },
       {
-        image: "images/index/4.png",
+        image: "images/index/4.webp",
         class: "normal",
       },
       {
-        image: "images/index/5.png",
+        image: "images/index/5.webp",
         class: "normal",
       },
       {
-        image: "images/index/6.png",
+        image: "images/index/6.webp",
         class: "tall",
       },
     ],
@@ -42,23 +42,23 @@ const indexDataImages = [
     },
     items: [
       {
-        image: "images/index/7.png",
+        image: "images/index/7.webp",
         class: "normal",
       },
       {
-        image: "images/index/8.png",
+        image: "images/index/8.webp",
         class: "tall",
       },
       {
-        image: "images/index/9.png",
+        image: "images/index/9.webp",
         class: "normal",
       },
       {
-        image: "images/index/10.png",
+        image: "images/index/10.webp",
         class: "wide",
       },
       {
-        image: "images/index/11.png",
+        image: "images/index/11.webp",
         class: "normal",
       },
     ],
@@ -72,23 +72,23 @@ const indexDataImages = [
     },
     items: [
       {
-        image: "images/index/12.png",
+        image: "images/index/12.webp",
         class: "wide",
       },
       {
-        image: "images/index/13.png",
+        image: "images/index/13.webp",
         class: "normal",
       },
       {
-        image: "images/index/14.png",
+        image: "images/index/14.webp",
         class: "tall",
       },
       {
-        image: "images/index/15.png",
+        image: "images/index/15.webp",
         class: "normal",
       },
       {
-        image: "images/index/16.png",
+        image: "images/index/16.webp",
         class: "tall",
       },
     ],
@@ -103,23 +103,23 @@ const indexDataImages = [
     items: [
       {
         id: 4,
-        image: "images/index/17.png",
+        image: "images/index/17.webp",
         class: "normal",
       },
       {
-        image: "images/index/18.png",
+        image: "images/index/18.webp",
         class: "tall",
       },
       {
-        image: "images/index/19.png",
+        image: "images/index/19.webp",
         class: "normal",
       },
       {
-        image: "images/index/20.png",
+        image: "images/index/20.webp",
         class: "wide",
       },
       {
-        image: "images/index/21.png",
+        image: "images/index/21.webp",
         class: "normal",
       },
     ],

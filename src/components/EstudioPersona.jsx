@@ -2,12 +2,11 @@ import styles from "./EstudioPersona.module.css";
 import images from "./EstudioData";
 import { motion } from "framer-motion";
 
-// TODO
 const animateImages = {
-  hidden: { opacity: 0, y: 200, scale: 0.9 },
+  hidden: { opacity: 0, x: 150, scale: 0.9 },
   show: {
     opacity: 1,
-    y: 0,
+    x: 0,
     scale: 1,
     transition: {
       duration: 1.2,
@@ -29,11 +28,11 @@ function EstudioPersona() {
               viewport={{ once: true }}
             >
               <img
-                className={styles[img.class]}
                 src={img.image}
                 alt={img.name}
-                loading="lazy"
                 draggable="false"
+                className={styles[img.class]}
+                loading="lazy"
               />
               <div className={styles.description}>
                 <span>{img.id}</span>

@@ -26,8 +26,6 @@ const animateImages = {
   },
 };
 
-// TODO Lazy loading and first image animation
-
 function StudioPage() {
   return (
     <main>
@@ -36,7 +34,7 @@ function StudioPage() {
         <div>
           <img
             className={styles.imgOne}
-            src="images/studio/1.png"
+            src="images/studio/1.webp"
             alt="O Stool"
             loading="lazy"
             draggable="false"
@@ -49,7 +47,7 @@ function StudioPage() {
         <div>
           <img
             className={styles.imgTwo}
-            src="images/studio/2.png"
+            src="images/studio/2.webp"
             alt="Emiliana Gonzalez and Jessie Young"
             loading="lazy"
             draggable="false"
@@ -96,7 +94,7 @@ function StudioPage() {
             <span className={styles.download}>Download PDF</span>
           </div>
           <img
-            src="images/studio/3.png"
+            src="images/studio/3.webp"
             alt="chair"
             loading="lazy"
             draggable="false"
@@ -114,7 +112,7 @@ function StudioPage() {
             <span className={styles.download}>Download PDF</span>
           </div>
           <img
-            src="images/studio/4.png"
+            src="images/studio/4.webp"
             alt="chair"
             loading="lazy"
             draggable="false"
@@ -131,7 +129,7 @@ function StudioPage() {
             <span className={styles.download}>Download PDF</span>
           </div>
           <img
-            src="images/studio/5.png"
+            src="images/studio/5.webp"
             alt="chair"
             loading="lazy"
             draggable="false"
@@ -149,13 +147,13 @@ function StudioPage() {
         viewport={{ once: true }}
       >
         <img
-          src="images/studio/6.png"
+          src="images/studio/6.webp"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
         <img
-          src="images/studio/7.png"
+          src="images/studio/7.webp"
           alt="chair"
           loading="lazy"
           draggable="false"
@@ -214,42 +212,42 @@ function StudioPage() {
       >
         <img
           className={styles.tall}
-          src="images/studio/8.png"
+          src="images/studio/8.webp"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
         <img
           className={styles.normal}
-          src="images/studio/9.png"
+          src="images/studio/9.webp"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
         <img
           className={styles.tall}
-          src="images/studio/10.png"
+          src="images/studio/10.webp"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
         <img
           className={styles.normal}
-          src="images/studio/11.png"
+          src="images/studio/11.webp"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
         <img
           className={styles.normal}
-          src="images/studio/12.png"
+          src="images/studio/12.webp"
           alt="chair"
           loading="lazy"
           draggable="false"
         />
         <img
           className={styles.tall}
-          src="images/studio/13.png"
+          src="images/studio/13.webp"
           alt="chair"
           loading="lazy"
           draggable="false"
