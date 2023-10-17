@@ -1,6 +1,9 @@
 import styles from "./EstudioPersona.module.css";
 import images from "./EstudioData";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+
+const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
+const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
 function EstudioPersona() {
   return (
@@ -8,25 +11,30 @@ function EstudioPersona() {
       {images.map((img, i) => (
         <section className={styles[img.sectionClass]} key={i}>
           {img.items.map((img) => (
-            <motion.div
-              key={img.id}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.5 }}
-              viewport={{ once: true }}
-            >
-              <img
-                src={img.image}
-                alt={img.name}
-                draggable="false"
-                className={styles[img.class]}
-                loading="lazy"
-              />
-              <div className={styles.description}>
-                <span>{img.id}</span>
-                <span>{img.name}</span>
-              </div>
-            </motion.div>
+            <AnimatePresence key={img.id}>
+              <motion.div
+                initial={{ WebkitMaskImage: hiddenMask, maskImage: hiddenMask }}
+                whileInView={{
+                  WebkitMaskImage: visibleMask,
+                  maskImage: visibleMask,
+                }}
+                exit={{ WebkitMaskImage: hiddenMask, maskImage: hiddenMask }}
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <img
+                  src={img.image}
+                  alt={img.name}
+                  draggable="false"
+                  className={styles[img.class]}
+                  loading="lazy"
+                />
+                <div className={styles.description}>
+                  <span>{img.id}</span>
+                  <span>{img.name}</span>
+                </div>
+              </motion.div>
+            </AnimatePresence>
           ))}
         </section>
       ))}

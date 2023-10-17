@@ -1,6 +1,19 @@
 import styles from "./StudioPage.module.css";
 import { motion } from "framer-motion";
 
+const mainImage = {
+  hidden: { opacity: 0, scale: 0.9 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      duration: 2,
+    },
+  },
+};
+
 const animateText = {
   hidden: { opacity: 0, x: 300 },
   show: {
@@ -30,7 +43,13 @@ function StudioPage() {
   return (
     <main>
       {/* Section one */}
-      <section className={styles.one}>
+      <motion.section
+        className={styles.one}
+        variants={mainImage}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <div>
           <img
             className={styles.imgOne}
@@ -53,7 +72,7 @@ function StudioPage() {
             draggable="false"
           />
         </div>
-      </section>
+      </motion.section>
       {/* Section one */}
 
       {/* Section two */}
