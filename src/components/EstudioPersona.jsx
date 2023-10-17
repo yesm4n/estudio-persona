@@ -8,7 +8,13 @@ function EstudioPersona() {
       {images.map((img, i) => (
         <section className={styles[img.sectionClass]} key={i}>
           {img.items.map((img) => (
-            <motion.div key={img.id}>
+            <motion.div
+              key={img.id}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.5 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={img.image}
                 alt={img.name}
