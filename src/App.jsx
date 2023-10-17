@@ -1,10 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
+
+import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import Index from "./pages/Index";
 import Studio from "./pages/Studio";
 import PageNotFound from "./pages/PageNotFound";
-import Lenis from "@studio-freight/lenis";
-import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
@@ -21,10 +23,11 @@ function App() {
   return (
     <div className="container">
       <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="studio" element={<Studio />} />
-          <Route path="index" element={<Index />} />
+          <Route index element={<Homepage />} />
+          <Route path="/studio" element={<Studio />} />
+          <Route path="/index" element={<Index />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

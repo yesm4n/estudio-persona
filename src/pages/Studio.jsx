@@ -1,13 +1,7 @@
-import Navbar from "../components/Navbar";
 import StudioPage from "../components/StudioPage";
 
-function Studio() {
-  return (
-    <div>
-      <Navbar />
-      <StudioPage />
-    </div>
-  );
-}
+const Studio = () => {
+  return <StudioPage />;
+};
 
 export default Studio;

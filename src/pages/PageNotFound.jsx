@@ -1,13 +1,7 @@
-import Navbar from "../components/Navbar";
 import PageError from "../components/PageError";
 
-function PageNotFound() {
-  return (
-    <div>
-      <Navbar />
-      <PageError />
-    </div>
-  );
-}
+const PageNotFound = () => {
+  return <PageError />;
+};
 
 export default PageNotFound;
