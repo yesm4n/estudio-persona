@@ -5,14 +5,12 @@ import { motion } from "framer-motion";
 import { Fragment } from "react";
 
 const animateImages = {
-  hidden: { opacity: 0, x: "100%" },
+  hidden: { opacity: 0, x: "30%" },
   show: {
     opacity: 1,
     x: 0,
     scale: 1,
     transition: {
-      type: "spring",
-      stiffness: "222",
       duration: 2,
     },
   },
