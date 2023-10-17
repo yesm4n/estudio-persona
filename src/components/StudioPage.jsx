@@ -14,18 +14,18 @@ const mainImage = {
   },
 };
 
-const animateText = {
-  hidden: { opacity: 0, x: 300 },
-  show: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      type: "spring",
-      stiffness: 10,
-      duration: 2,
-    },
-  },
-};
+// const animateText = {
+//   hidden: { opacity: 0, x: 300 },
+//   show: {
+//     opacity: 1,
+//     x: 0,
+//     transition: {
+//       type: "spring",
+//       stiffness: 10,
+//       duration: 2,
+//     },
+//   },
+// };
 
 const animateImages = {
   hidden: { opacity: 0, y: 100, scale: 1.1 },
@@ -42,7 +42,6 @@ const animateImages = {
 function StudioPage() {
   return (
     <main>
-      {/* Section one */}
       <motion.section
         className={styles.one}
         variants={mainImage}
@@ -73,15 +72,8 @@ function StudioPage() {
           />
         </div>
       </motion.section>
-      {/* Section one */}
 
-      {/* Section two */}
-      <motion.section
-        variants={animateText}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-      >
+      <section>
         <h1 className={styles.h2}>
           <span className={styles.spacing}>
             {" "}
@@ -91,10 +83,8 @@ function StudioPage() {
           met in Los Angeles where they started working on a collaborative
           process that evolved into the formation of Estudio Persona.
         </h1>
-      </motion.section>
-      {/* Section two */}
+      </section>
 
-      {/* Section three */}
       <motion.section
         className={styles.three}
         variants={animateImages}
@@ -155,9 +145,7 @@ function StudioPage() {
           />
         </div>
       </motion.section>
-      {/* Section three */}
 
-      {/* Section four */}
       <motion.section
         className={styles.four}
         variants={animateImages}
@@ -178,25 +166,15 @@ function StudioPage() {
           draggable="false"
         />
       </motion.section>
-      {/* Section four */}
 
-      {/* Section five */}
-      <motion.section
-        className={styles.five}
-        variants={animateText}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-      >
+      <section className={styles.five}>
         <h3 className={styles.h3}>
           At the core of their practice lies a desire to unearth the full
           potential of raw materials and a creative expression reflective of
           their cultural identity and heritage.
         </h3>
-      </motion.section>
-      {/* Section five */}
+      </section>
 
-      {/* Section six */}
       <motion.section
         className={styles.six}
         variants={animateImages}
@@ -214,9 +192,7 @@ function StudioPage() {
           lines.
         </p>
       </motion.section>
-      {/* Section six */}
 
-      {/* Section seven */}
       <div className={styles.div}>
         <span className={styles.num}>1</span>
         <span className={styles.name}>Explore Gallery</span>
@@ -272,7 +248,6 @@ function StudioPage() {
           draggable="false"
         />
       </motion.section>
-      {/* Section seven */}
     </main>
   );
 }
