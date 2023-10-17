@@ -7,11 +7,10 @@ Features
 Dynamic image scaling
 Smooth scrolling
 Content sections: Estudio Persona, Studio, Index
+Transitions
 
 Upcoming Improvements
 
-Adding animations
-Implementing lazy loading for better performance
 Ensuring full responsiveness, including mobile devices
 
 Performance
