@@ -106,4 +106,8 @@ html.lenis {
   section {
     margin: 0;
   }
+
+  main {
+    font-size: var(--s-font);
+  }
 }
