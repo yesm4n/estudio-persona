@@ -71,3 +71,64 @@
 .description span:first-child {
   font-size: var(--s-font);
 }
+
+@media (width < 650px) {
+  .one {
+    grid: unset;
+    gap: 0;
+  }
+
+  .one .imgOne {
+    aspect-ratio: unset;
+    height: 100vh;
+  }
+
+  .one .imgTwo {
+    aspect-ratio: unset;
+    height: 100vh;
+  }
+
+  .description {
+    margin: 0;
+    padding: 10px 0 20px;
+  }
+
+  .description span {
+    font-size: var(--s-font);
+  }
+
+  .two {
+    grid: unset;
+    gap: 0;
+  }
+
+  .two .imgOne {
+    aspect-ratio: unset;
+    height: 100vh;
+  }
+
+  .two .imgTwo {
+    aspect-ratio: unset;
+    height: 100vh;
+  }
+
+  .two .imgThree {
+    aspect-ratio: unset;
+    height: 100vh;
+  }
+
+  .four .imgOne {
+    aspect-ratio: unset;
+    height: 100vh;
+  }
+
+  .four {
+    grid: unset;
+    gap: 0;
+  }
+
+  .four .imgTwo {
+    aspect-ratio: unset;
+    height: 100vh;
+  }
+}

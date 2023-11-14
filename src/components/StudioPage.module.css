@@ -188,6 +188,47 @@
   aspect-ratio: 1/1;
 }
 
-@media (width < 700px) {
-  /* media queries needed for section 3 studio */
+@media (width < 650px) {
+  .one {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .imgOne {
+    display: none;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .three {
+    grid-template-columns: 1fr;
+  }
+
+  .six {
+    grid-template-columns: 1fr;
+  }
+
+  .seven {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tall {
+    aspect-ratio: 1/1;
+  }
+
+  .h2 {
+    margin-top: var(--section-spacing);
+  }
+
+  .h3 {
+    margin-top: var(--section-spacing);
+  }
 }

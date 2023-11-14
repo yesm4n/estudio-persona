@@ -101,3 +101,9 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+@media (width < 650px) {
+  section {
+    margin: 0;
+  }
+}

@@ -47,5 +47,34 @@
 }
 
 @media (width < 650px) {
-  /* media queries needed for section 3 studio */
+  .one {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wide {
+    aspect-ratio: 1/1;
+    height: auto;
+    grid-row: unset;
+    grid-column: unset;
+  }
+
+  .tall {
+    aspect-ratio: 1/1;
+    height: auto;
+    grid-row: unset;
+    grid-column: unset;
+  }
+
+  .normal {
+    aspect-ratio: 1/1;
+    height: auto;
+    grid-row: unset;
+    grid-column: unset;
+  }
+
+  .div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
