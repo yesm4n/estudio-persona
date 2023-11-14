@@ -74,18 +74,17 @@
 
 @media (width < 650px) {
   .one {
-    grid: unset;
-    gap: 0;
+    display: unset;
   }
 
   .one .imgOne {
     aspect-ratio: unset;
-    height: 100vh;
+    height: auto;
   }
 
   .one .imgTwo {
     aspect-ratio: unset;
-    height: 100vh;
+    height: auto;
   }
 
   .description {
@@ -98,37 +97,35 @@
   }
 
   .two {
-    grid: unset;
-    gap: 0;
+    display: unset;
   }
 
   .two .imgOne {
     aspect-ratio: unset;
-    height: 100vh;
+    height: auto;
   }
 
   .two .imgTwo {
     aspect-ratio: unset;
-    height: 100vh;
+    height: auto;
   }
 
   .two .imgThree {
     aspect-ratio: unset;
-    height: 100vh;
+    height: auto;
   }
 
   .four .imgOne {
     aspect-ratio: unset;
-    height: 100vh;
+    height: auto;
   }
 
   .four {
-    grid: unset;
-    gap: 0;
+    display: unset;
   }
 
   .four .imgTwo {
     aspect-ratio: unset;
-    height: 100vh;
+    height: auto;
   }
 }
