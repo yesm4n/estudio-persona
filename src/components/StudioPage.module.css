@@ -211,7 +211,11 @@
   }
 
   .six {
-    grid-template-columns: 1fr;
+    grid-template-columns: 30% 70%;
+  }
+
+  .six p {
+    font-size: var(--s-m-font);
   }
 
   .seven {

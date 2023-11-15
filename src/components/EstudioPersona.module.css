@@ -78,12 +78,12 @@
   }
 
   .one .imgOne {
-    aspect-ratio: unset;
+    aspect-ratio: 1/1.5;
     height: auto;
   }
 
   .one .imgTwo {
-    aspect-ratio: unset;
+    aspect-ratio: 1/1.5;
     height: auto;
   }
 
@@ -101,22 +101,27 @@
   }
 
   .two .imgOne {
-    aspect-ratio: unset;
+    aspect-ratio: 1/1.5;
     height: auto;
   }
 
   .two .imgTwo {
-    aspect-ratio: unset;
+    aspect-ratio: 1/1.5;
     height: auto;
   }
 
   .two .imgThree {
-    aspect-ratio: unset;
+    aspect-ratio: 1/1.5;
     height: auto;
   }
 
+  .three .imgOne {
+    height: auto;
+    aspect-ratio: 1/1.5;
+  }
+
   .four .imgOne {
-    aspect-ratio: unset;
+    aspect-ratio: 1/1.5;
     height: auto;
   }
 
@@ -125,7 +130,7 @@
   }
 
   .four .imgTwo {
-    aspect-ratio: unset;
+    aspect-ratio: 1/1.5;
     height: auto;
   }
 }

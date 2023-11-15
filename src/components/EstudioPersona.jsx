@@ -12,17 +12,19 @@ function EstudioPersona() {
         <section className={styles[img.sectionClass]} key={i}>
           {img.items.map((img) => (
             <AnimatePresence key={img.id}>
-              <motion.div
-                initial={{ WebkitMaskImage: hiddenMask, maskImage: hiddenMask }}
-                whileInView={{
-                  WebkitMaskImage: visibleMask,
-                  maskImage: visibleMask,
-                }}
-                exit={{ WebkitMaskImage: hiddenMask, maskImage: hiddenMask }}
-                transition={{ duration: 1, delay: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <img
+              <div>
+                <motion.img
+                  initial={{
+                    WebkitMaskImage: hiddenMask,
+                    maskImage: hiddenMask,
+                  }}
+                  whileInView={{
+                    WebkitMaskImage: visibleMask,
+                    maskImage: visibleMask,
+                  }}
+                  exit={{ WebkitMaskImage: hiddenMask, maskImage: hiddenMask }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  viewport={{ once: true }}
                   src={img.image}
                   alt={img.name}
                   draggable="false"
@@ -33,7 +35,7 @@ function EstudioPersona() {
                   <span>{img.id}</span>
                   <span>{img.name}</span>
                 </div>
-              </motion.div>
+              </div>
             </AnimatePresence>
           ))}
         </section>
