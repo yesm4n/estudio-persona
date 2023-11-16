@@ -63,6 +63,32 @@ section {
   margin-bottom: var(--section-spacing);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: var(--s-m-font);
+  line-height: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.disabled:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
 main {
   overflow: hidden;
   text-transform: var(--uppercase);
@@ -102,6 +128,16 @@ html.lenis {
   pointer-events: none;
 }
 
+.open {
+  max-width: 21px;
+  display: none;
+}
+
+.close {
+  max-width: 21px;
+  display: none;
+}
+
 @media (width < 650px) {
   section {
     margin: 0;
@@ -109,5 +145,39 @@ html.lenis {
 
   main {
     font-size: var(--s-font);
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.active {
+    display: flex;
+    font-size: var(--s-font);
+    flex-direction: row-reverse;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav ul {
+    margin: auto;
+  }
+
+  .open,
+  .close {
+    display: block;
+    margin-bottom: 24px;
+    margin-right: 0.5rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .disabled {
+    display: none;
   }
 }
