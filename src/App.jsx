@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 
 import Navbar from "./components/Navbar";
+import Container from "./components/Container";
 import Homepage from "./pages/Homepage";
 import Index from "./pages/Index";
 import Studio from "./pages/Studio";
@@ -21,17 +22,17 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-      <BrowserRouter>
-        <Navbar />
+    <BrowserRouter>
+      <Navbar />
+      <Container>
         <Routes>
           <Route index element={<Homepage />} />
           <Route path="/studio" element={<Studio />} />
           <Route path="/index" element={<Index />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </Container>
+    </BrowserRouter>
   );
 }
 

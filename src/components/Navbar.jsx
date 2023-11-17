@@ -1,43 +1,51 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+  const location = useLocation();
 
-  const handleClick = () => {
-    setOpen((open) => !open);
+  useEffect(() => {
+    console.log("Location changed!", location.pathname);
+
+    if (location.pathname) {
+      setOpen(false);
+    }
+  }, [location]);
+
+  const handleOpen = () => {
+    setOpen((prev) => !prev);
   };
 
   return (
-    <header>
-      {open ? (
-        <img
-          src="images/menu.png"
-          className={open ? "open" : "close"}
-          onClick={handleClick}
-        />
-      ) : (
-        <img
-          src="images/close.png"
-          className={open ? "open" : "close"}
-          onClick={handleClick}
-        />
-      )}
-      <nav className={!open ? "active" : ""}>
+    <header className={open ? "active" : ""}>
+      <nav>
         <span>
-          <Link to="/">Estudio Persona</Link>
+          <Link to="/" className={open ? "active" : ""}>
+            Estudio Persona
+          </Link>
         </span>
 
-        <ul>
+        <ul className={open ? "active" : ""}>
           <li>
             <Link to="/studio">Studio</Link>
           </li>
-          <li className="disabled">Shop</li>
+          <li>
+            <Link>Shop</Link>
+          </li>
           <li>
             <Link to="/index">Index</Link>
           </li>
-          <li className="disabled">Journal</li>
+          <li>
+            <Link>Journal</Link>
+          </li>
         </ul>
+
+        {open ? (
+          <img src="close.png" className="close" onClick={handleOpen} />
+        ) : (
+          <img src="menu.png" className="open" onClick={handleOpen} />
+        )}
       </nav>
     </header>
   );

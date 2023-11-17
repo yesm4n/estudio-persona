@@ -63,27 +63,6 @@ section {
   margin-bottom: var(--section-spacing);
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  font-size: var(--s-m-font);
-  line-height: 100%;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .disabled:hover {
   text-decoration: line-through;
   cursor: pointer;
@@ -146,38 +125,91 @@ html.lenis {
   main {
     font-size: var(--s-font);
   }
+}
 
-  nav {
-    display: none;
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: var(--s-m-font);
+  line-height: 100%;
+  padding: 24px 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav span a {
+  text-decoration: none;
+  color: black;
+}
+
+.close,
+.open {
+  width: 25px;
+  display: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (width < 650px) {
+  header.active {
+    transition: all 500ms ease;
+    background-color: black;
+    height: 100vh;
+    height: 100dvh;
   }
 
-  nav.active {
-    display: flex;
+  nav {
     font-size: var(--s-font);
-    flex-direction: row-reverse;
-    gap: 1rem;
-    align-items: center;
-    width: 100%;
   }
 
   nav ul {
-    margin: auto;
+    display: none;
+  }
+
+  nav ul.active {
+    font-size: var(--l-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  nav a {
+    color: white;
+  }
+
+  nav span a.active {
+    color: rgb(194, 191, 191);
   }
 
   .open,
   .close {
     display: block;
-    margin-bottom: 24px;
-    margin-right: 0.5rem;
   }
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .disabled {
-    display: none;
+  .close {
+    filter: brightness(0) invert(0.8);
   }
 }
