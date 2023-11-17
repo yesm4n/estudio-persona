@@ -63,11 +63,6 @@ section {
   margin-bottom: var(--section-spacing);
 }
 
-.disabled:hover {
-  text-decoration: line-through;
-  cursor: pointer;
-}
-
 main {
   overflow: hidden;
   text-transform: var(--uppercase);
@@ -105,16 +100,6 @@ html.lenis {
 
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
-}
-
-.open {
-  max-width: 21px;
-  display: none;
-}
-
-.close {
-  max-width: 21px;
-  display: none;
 }
 
 @media (width < 650px) {
@@ -157,16 +142,21 @@ nav span a {
 
 .close,
 .open {
-  width: 25px;
+  width: 18px;
   display: none;
   cursor: pointer;
   z-index: 2;
 }
 
+.disabled:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
 @media (width < 650px) {
   header.active {
-    transition: all 500ms ease;
     background-color: black;
+    transition: all 400ms ease 100ms;
     height: 100vh;
     height: 100dvh;
   }
@@ -194,6 +184,7 @@ nav span a {
 
   nav li {
     margin: 5px 0;
+    color: white;
   }
 
   nav a {
@@ -201,6 +192,8 @@ nav span a {
   }
 
   nav span a.active {
+    position: relative;
+    z-index: 2;
     color: rgb(194, 191, 191);
   }
 

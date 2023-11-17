@@ -6,11 +6,19 @@ const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log("Location changed!", location.pathname);
+    const handleScroll = (e) => {
+      if (e.type === "scroll") {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     if (location.pathname) {
       setOpen(false);
     }
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [location]);
 
   const handleOpen = () => {
@@ -30,15 +38,11 @@ const Navbar = () => {
           <li>
             <Link to="/studio">Studio</Link>
           </li>
-          <li>
-            <Link>Shop</Link>
-          </li>
+          <li className="disabled">Shop</li>
           <li>
             <Link to="/index">Index</Link>
           </li>
-          <li>
-            <Link>Journal</Link>
-          </li>
+          <li className="disabled">Journal</li>
         </ul>
 
         {open ? (
