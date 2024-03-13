@@ -1,21 +1,5 @@
-# Chair Display Project
+# Estudio persona
 
-A chair display project, designed by Rron Berisa and coded by me, using Vite as a Single Page Application (SPA).
+Exploration project
 
-Features
-
-Dynamic image scaling
-Smooth scrolling
-Content sections: Estudio Persona, Studio, Index
-Transitions
-
-Upcoming Improvements
-
-Ensuring full responsiveness, including mobile devices
-
-Performance
-
-We've run Lighthouse audits, and the results are impressive. 100% on best practices and SEO. 97% on accessibility and now working on performance!
-
-Acknowledgments
-Thanks to Rron Berisa for the inspiring design.
+Technology used: Vite, React, React router dom, Lenis scroll, Framer motion and so on.
